@@ -124,6 +124,7 @@ h1 {
   height: 1200px;
   padding: 0px;
   position: relative;
+  word-wrap: break-word;
 }
 .homeDiv div {
   background-color: #ffffff57;
@@ -132,6 +133,7 @@ h1 {
   margin: 50px 100px;
   color: black;
   font-family: "Roboto Slab", serif;
+  word-wrap: break-word;
 }
 .homeImg1 {
   height: 500px;
@@ -164,6 +166,7 @@ h1 {
   height: 1750px;
   padding: 15px;
   position: relative;
+  word-wrap: break-word;
 }
 .offerDivImg {
   display: flex;
@@ -174,6 +177,7 @@ h1 {
   background-color: #313030;
   margin: 20px 30px;
   border-radius: 20px;
+  word-wrap: break-word;
 }
 .offerImg {
   width: 190px;
@@ -209,6 +213,7 @@ h1 {
   min-height: 200px;
   padding: 15px;
   position: relative;
+  word-wrap: break-word;
 }
 .contactDiv {
   margin-top: 20px;
@@ -217,6 +222,7 @@ h1 {
   min-height: 200px;
   padding: 15px;
   position: relative;
+  word-wrap: break-word;
 }
 #home {
   background-color: none;
@@ -250,6 +256,7 @@ h1 {
   left: 0px;
   display: flex;
   flex-direction: column;
+  word-wrap: break-word;
 }
 .contact-form button {
   background-color: #333;
