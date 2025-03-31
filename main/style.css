@@ -177,8 +177,8 @@ h1 {
   word-wrap: break-word;
 }
 .offerImg {
-  width: 20%;
-  height: 17%;
+  width: 100%;
+  height: 100%;
   position: relative;
 }
 .offerImg:hover {
