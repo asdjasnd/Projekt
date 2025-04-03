@@ -1,3 +1,4 @@
+/* Grundlegende Styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,42 +6,38 @@
   font-weight: lighter;
   white-space: nowrap;
 }
+
 li {
   list-style-type: none;
 }
+
 /* Body */
 body {
   font-family: Verdana, sans-serif;
-  height: 600vh;
   background: linear-gradient(to top, #85a52c, #156b1c, #721e1e, #2c3e50e3);
   width: 100%;
 }
-/*body::-webkit-scrollbar {
-  width: 0px;
-}*/
-/* Header, Auswahl*/
+
+/* Header, Auswahl */
 header {
   background-color: #24384d;
   position: fixed;
   top: 0;
-  left: 0px;
+  left: 0;
   z-index: 1000;
   width: 100%;
   display: flex;
   height: 80px;
   transition: width 1.5s ease;
 }
-.content {
-  padding: 0px 20px;
-  width: 100%;
-}
+
 .menuKon {
   display: flex;
-  width: 90%;
   justify-content: space-between;
   height: 80px;
-  margin-left: 10%;
+  width: 100%;
 }
+
 .menuKon a {
   color: aliceblue;
   text-decoration: none;
@@ -53,16 +50,19 @@ header {
   border-radius: 10px;
   width: 200px;
   height: 50px;
-  margin: 15px 0px;
+  margin: 15px 0;
 }
+
 .menuKon a:hover {
   background-color: #555555d2;
 }
+
 .activeSide {
   background-color: #2e2e2e;
   border-radius: 3px !important;
 }
-/*Logo*/
+
+/* Logo */
 .btnLogo {
   height: 60px;
   width: 60px;
@@ -74,21 +74,14 @@ header {
   border-radius: 6px;
   cursor: pointer;
 }
-.btnLogo:hover {
-  height: 70px;
-  width: 70px;
-  margin: 5px;
-}
+
 .btnLogo img {
   height: 60px;
   width: 60px;
   border-radius: 6px;
 }
-.btnLogo img:hover {
-  height: 70px;
-  width: 70px;
-}
-/*Sprache*/
+
+/* Sprachwechsel */
 .btnLang {
   cursor: pointer!important;
   margin: 10px!important;
@@ -99,15 +92,13 @@ header {
   align-items: center!important;
   border-radius: 5px!important;
 }
+
 .flag {
   height: 66px;
   width: 66px;
   border-radius: 5px;
 }
-.flag:hover {
-  height: 70px;
-  width: 70px;
-}
+
 h1 {
   margin-top: 100px;
   display: flex;
@@ -117,6 +108,7 @@ h1 {
   color: azure;
   background-color: #24384d;
 }
+
 .homeDiv {
   margin-top: 20px;
   background-color: #95a2b1;
@@ -124,8 +116,8 @@ h1 {
   height: 1200px;
   padding: 0px;
   position: relative;
-  word-wrap: break-word;
 }
+
 .homeDiv div {
   background-color: #ffffff57;
   z-index: 1;
@@ -133,178 +125,95 @@ h1 {
   margin: 50px 100px;
   color: black;
   font-family: "Roboto Slab", serif;
-  word-wrap: break-word;
-}
-.homeImg1 {
-  height: 500px;
-  width: 50%;
-  margin: 30px;
-  right: 0px;
-  top: 500px;
-  position: absolute;
-}
-.homeImg2 {
-  height: 500px;
-  width: 90%;
-  margin: 0px;
-  left: 50px;
-  top: 20px;
-  position: absolute;
-}
-.homeImg3 {
-  height: 200px;
-  width: 25%;
-  margin: 0px;
-  right: 0px;
-  top: 0px;
-  position: absolute;
-}
-.offersDiv {
-  margin-top: 20px;
-  background-color: #95a2b1;
-  width: 100%;
-  height: 1550px;
-  position: relative;
-}
-.offerDivImg {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  height: 250px;
-  width: 250px;
-  background-color: #313030;
-  border-radius: 20px;
-  margin: 10%!imporant;
-}
-.offerImg {
-  width: 80%;
-  height: 80%;
-  position: relative;
-}
-.offerImg:hover {
-  width: 95%;
-  height: 95%;
-  position: relative;
 }
 
-.offerBtn {
-  width: 100%;
-  height: 100%;
-}
-.offerP {
-  color: #ffffff;
-  position: relative;
-  margin-bottom: 8px;
+.homeImg1, .homeImg2, .homeImg3 {
+  max-width: 100%;
+  height: auto;
 }
 
-.usDiv {
-  margin-top: 20px;
-  background-color: #95a2b1;
-  width: 100%;
-  min-height: 200px;
-  padding: 15px;
-  position: relative;
-  word-wrap: break-word;
-}
-.contactDiv {
-  margin-top: 20px;
-  background-color: #95a2b1;
-  width: 100%;
-  min-height: 200px;
-  padding: 15px;
-  position: relative;
-  word-wrap: break-word;
-}
-#home {
-  background-color: none;
-}
-#offers {
-  background-color: none;
-}
-
-#us {
-  background-color: none;
-}
-
-#contact {
-  background-color: none;
-}
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.contact-form input {
-  width: 20%;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: larger;
-}
-.contact-form form div {
-  left: 0px;
-  display: flex;
-  flex-direction: column;
-  word-wrap: break-word;
-}
-.contact-form button {
-  background-color: #333;
-  color: white;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-.contact-info,
-.contact-form {
-  margin: 40px 20px;
-}
-.contact-form h2,
-.contact-info h2 {
-  color: #30100d;
-  margin: 0px 60px;
-}
 .footer {
   display: flex;
   background-color: #333;
   color: white;
-  bottom: -512vh;
+  bottom: 0;
   height: 120px;
   width: 100%;
   position: absolute;
 }
-.footer_con {
-  display: flex;
-  background-color: #333;
-  color: white;
-  bottom: -290px;
-  height: 120px;
-  width: 100%;
-  position: absolute;
-}
-.social-media {
-  flex: content;
-  display: flex;
-}
+
 .social-media a img {
   width: 80px;
   height: 80px;
   border-radius: 25px;
-  margin: 20px 20px;
+  margin: 20px;
 }
-.social-media a img:hover {
-  width: 90px;
-  height: 90px;
-  margin: 15px 15px;
-}
+
 .links a {
   margin: 15px 1px;
   color: azure;
   text-align: right;
-  transition: font-size 1s;
 }
-.links a:hover {
-  font-size: larger;
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  header {
+    height: 60px;
+  }
+
+  .menuKon {
+    display: none; /* Menü wird auf mobilen Geräten versteckt */
+  }
+
+  .btnLogo {
+    display: block;
+  }
+
+  .homeDiv {
+    height: auto;
+    padding: 20px;
+  }
+
+  .homeDiv div {
+    margin: 20px;
+    font-size: 16px;
+  }
+
+  /* Hamburger Menu Styles */
+  .menuKon.open {
+    display: flex;
+    flex-direction: column;
+    background-color: #24384d;
+    width: 100%;
+  }
+
+  .menuKon a {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .footer {
+    position: relative;
+    height: auto;
+  }
 }
+
+/* Hamburger Button */
+.hamburger {
+  display: block;
+  width: 30px;
+  height: 20px;
+  background-color: #fff;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.hamburger div {
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  margin: 5px 0;
+}
+
